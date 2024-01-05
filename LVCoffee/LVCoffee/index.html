@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LVCoffee</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/17e95093e3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<!--Header-->
+<div class="banner">
+    <div class="navbar">
+        <h1 class="logo"><span class="logo-text">LV</span>Coffee<span class="logo-text">.</span></h1>
+        <ul>
+            <li><a></a>Home</li>
+            <li><a></a>Menu</li>
+            <li><a></a>Products</li>
+            <li><a></a>Community</li>
+            <li><a></a>About</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>A coffee a day</h1>
+        <p>Bring out the coffee. Bring up the joy. And fulfill the holiday spirit with us</p>
+        <div>
+            <button type="button" class="nav-button"><span class="animated-button"></span>Make An Order</button>
+            <a href="signin.html" ><button type="button" class="nav-button"><span class="animated-button"></span>Sign In</button></a>
+        </div>
+    </div>
+</div>
+
+<hr style="border:3px solid #d2c1b0; box-shadow: 0 0 15px #ffa31f;">
+
+<!--Sidebar-->
+<div class="sidebar">
+    <i class="sidebar-icon fas fa-search"></i>
+    <i class="sidebar-icon fa-solid fa-mug-hot"></i>
+    <i class="sidebar-icon fas fa-home"></i>
+    <i class="sidebar-icon fa-solid fa-cart-shopping"></i>
+    <i class="sidebar-icon fas fa-users"></i>
+</div>
+
+<!--Main-->
+
+<!--Main(Newly Added)-->
+<div class="movie-list-container">
+    <div class="movie-list-head">
+        <h1 class="movie-list-title">Newly Added</h1>
+        <button class="movie-list-seemore"><span class="animated-button"></span>See More</button>
+    </div>
+        <div class="movie-list">
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="andres-vera-BewKTZMv7V0-unsplash.jpg" alt="">
+                <h2 class="movie-list-item-rate">$5</h2>
+                <span class="movie-list-item-title">Espresso</span>
+                <p class="movie-list-item-desc">Espresso is a concentrated form of coffee, served in shots</p>
+                <a><button class="movie-list-item-button" onclick="addtocart()">Add To Cart</button></a>
+                <a><button class="movie-list-item-button" id="movie-list-item-button2">More Info</button></a>
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="nathan-dumlao-ikU3J1nr52w-unsplash.jpg" alt="">
+                <h2 class="movie-list-item-rate">$5</h2>
+                <span style="font-size: 22px;" class="movie-list-item-title">Cappuccino</span>
+                <p class="movie-list-item-desc">A cappuccino is the perfect balance of espresso, steamed milk and foam</p>
+                <a><button class="movie-list-item-button" onclick="addtocart()">Add To Cart</button></a>
+                <a><button class="movie-list-item-button" id="movie-list-item-button2">More Info</button></a>                
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="one-zen-SKoZa7rcLlU-unsplash.jpg" alt="">
+                <h2 class="movie-list-item-rate">$5</h2>
+                <span class="movie-list-item-title">Americano</span>
+                <p class="movie-list-item-desc">Caffè americano, also known as Americano or American, is a type of coffee drink prepared by diluting an espresso shot with hot water</p>
+                <a><button class="movie-list-item-button" onclick="addtocart()">Add To Cart</button></a>
+                <a><button class="movie-list-item-button" id="movie-list-item-button2">More Info</button></a>
+            </div>
+        </div>
+                <div class="movie-list">
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="joshua-hill-5R-W-P7De5A-unsplash.jpg" alt="">
+                <h2 class="movie-list-item-rate">$5</h2>
+                <span class="movie-list-item-title">Latte</span>
+                <p class="movie-list-item-desc">Originating in Portugal, this hot coffee drink is closely related to the latte and cappuccino</p>
+                <a><button class="movie-list-item-button" onclick="addtocart()">Add To Cart</button></a>
+                <a><button class="movie-list-item-button" id="movie-list-item-button2">More Info</button></a>
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="1_CAH_CaffeMocha_Hdr_2880x16602.jpg" alt="">
+                <h2 class="movie-list-item-rate">$5</h2>
+                <span style="font-size: 22px;" class="movie-list-item-title">Caffe Mocha</span>
+                <p class="movie-list-item-desc">The sweetest type of coffee to get and most commonly available is a mocha</p>
+                <a><button class="movie-list-item-button" onclick="addtocart()">Add To Cart</button></a>
+                <a><button class="movie-list-item-button" id="movie-list-item-button2">More Info</button></a>
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="kaffee-meister-BIeXZhg_7sw-unsplash.jpg" alt="">
+                <h2 class="movie-list-item-rate">$5</h2>
+                <span class="movie-list-item-title">Iced Coffee</span>
+                <p class="movie-list-item-desc">A coffee with ice, typically served with a dash of milk, cream or sweetener</p>
+                <a><button class="movie-list-item-button" onclick="addtocart()">Add To cart</button></a>
+                <a ><button class="movie-list-item-button" id="movie-list-item-button2">More Info</button></a>
+            </div>
+        </div>
+</div>
+
+<!--Main (New)-->
+<hr style="border:3px solid #d2c1b0; box-shadow: 0 0 15px #ffa31f;">
+<div class="container">
+    <div class="content-container">
+        <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgb(22, 22, 22)), url('helena-lopes-UZe35tk5UoA-unsplash.jpg');">
+            <img class="featured-title" src="Untitled.png" alt="">
+            <p class="featured-desc">We are <span class="logo-text">building</span> a huge community of <span class="logo-text">coffee lovers</span>. Join us now in order to get new <span class="logo-text">notification</span> and events every weekends<span class="logo-text">.</span>
+               </p>
+        </div>
+
+<!--Main(Popular)-->
+<div class="movie-list-container">
+    <div class="movie-list-head">
+        <h1 class="movie-list-title">Pastries And Sweets</h1>
+        <button class="movie-list-seemore"><span class="animated-button"></span>See More</button>
+    </div>
+        <div class="movie-list">
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="pushpak-dsilva-2UeBOL7UD34-unsplash.jpg" alt="">
+                <h2 class="movie-list-item-rate">$10</h2>
+                <span class="movie-list-item-title">Chocolate Cake</span>
+                <p class="movie-list-item-desc">The best type of cake and flavour ever ! It is chocolate</p>
+                <a  ><button class="movie-list-item-button" onclick="addtocart()">Add To Cart</button></a>
+                <a  ><button class="movie-list-item-button" id="movie-list-item-button2">More Info</button></a>
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="shawn-sim-JuZbhZIKJFM-unsplash.jpg" alt="">
+                <h2 class="movie-list-item-rate">$10</h2>
+                <span style="font-size: 22px;" class="movie-list-item-title">Vanilla Cupcake</span>
+                <p class="movie-list-item-desc">Vanilla cake is a catch-all term for sponge cakes that have a vanilla flavor</p>
+                <a><button class="movie-list-item-button" onclick="addtocart()">Add To Cart</button></a>
+                <a><button class="movie-list-item-button" id="movie-list-item-button2">More Info</button></a>                
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="deva-williamson-S2jw81lfrG0-unsplash.jpg" alt="">
+                <h2 class="movie-list-item-rate">$10</h2>
+                <span class="movie-list-item-title">Strawberry Cupcake</span>
+                <p class="movie-list-item-desc">Strawberry Cupcakes with Strawberry Buttercream</p>
+                <a><button class="movie-list-item-button" onclick="addtocart()">Add To Cart</button></a>
+                <a><button class="movie-list-item-button" id="movie-list-item-button2">More Info</button></a>
+            </div>
+        </div>
+                <div class="movie-list">
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="conor-brown-H1uISjlRXJE-unsplash.jpg" alt="">
+                <h2 class="movie-list-item-rate">$10</h2>
+                <span class="movie-list-item-title">Cookies</span>
+                <p class="movie-list-item-desc">Cookie is a baked or cooked snack or dessert that is typically small, flat and sweet</p>
+                <a><button class="movie-list-item-button" onclick="addtocart()">Add To Cart</button></a>
+                <a><button class="movie-list-item-button" id="movie-list-item-button2">More Info</button></a>
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="mahyar-motebassem-123wTsGP4LU-unsplash.jpg" alt="">
+                <h2 class="movie-list-item-rate">$10</h2>
+                <span style="font-size: 22px;" class="movie-list-item-title">Croissant</span>
+                <p class="movie-list-item-desc">A croissant is a buttery, flaky, viennoiserie pastry inspired by the shape of the Austrian kipferl but using the French yeast-leavened laminated dough</p>
+                <a><button class="movie-list-item-button" onclick="addtocart()">Add To Cart</button></a>
+                <a><button class="movie-list-item-button" id="movie-list-item-button2">More Info</button></a>
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="kobby-mendez-q54Oxq44MZs-unsplash.jpg" alt="">
+                <h2 class="movie-list-item-rate">$10</h2>
+                <span class="movie-list-item-title">Donut</span>
+                <p class="movie-list-item-desc">Doughnuts are a kind of ring-shaped snack food popular in many countries, which are usually deep fried from flour doughs</p>
+                <a><button class="movie-list-item-button" onclick="addtocart()">Add To cart</button></a>
+                <a><button class="movie-list-item-button" id="movie-list-item-button2">More Info</button></a>
+            </div>
+        </div>
+</div>
+
+<!--Facts-->
+<div class="services-container">
+    <h1>Cool Facts</h1>
+    <div class="rows">
+        <div class="service">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <h2>Outstanding Fame</h2>
+            <p>With over 10M coffee sold per years</p>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-heart-circle-check"></i>
+            <h2>#1 Loved Brand</h2>
+            <p>We can be trusted and be loved by every costumers</p>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-earth-asia"></i>
+            <h2>Worldwide Availability</h2>
+            <p>More than 100 new locations being erected every year</p>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-calendar-day"></i>
+            <h2>Huge Events</h2>
+            <p>We host big events with prize every weekends and it is completely free to participate</p>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-medal"></i>
+            <h2>#1 Yearly Coffee Medial Asia</h2>
+            <p>First placed in the 2022 CMA</p>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h2>Donation</h2>
+            <p>Until the end of 2022 we have donated over 8.3M in dollars to smaller businesses and charity organiztions all around the world</p>
+        </div>
+        
+    </div>
+</div>
+
+<!--Video-->
+<h1 class="video-title"><span class="logo-text">Advertising</span> Video</h1>
+<div class="video-container">
+    <video controls autoplay muted loop width="1200" height="400">
+        <source src="Coffe Time _ Panasonic lumix gx80 _ Meike 25mm f_1.8.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!--Footer-->
+<hr style="border:3px solid #d2c1b0; box-shadow: 0 0 15px #ffa31f;">
+<footer class="footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a>About Us</a></li>
+                    <li><a>Our Services</a></li>
+                    <li><a>Avchivements</a></li>
+                    <li><a>Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a>FAQ</a></li>
+                    <li><a>Home</a></li>
+                    <li><a>Menu</a></li>
+                    <li><a>Community Tab</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=U2Fjfqm-7g8">Random Place</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>You Might Care</h4>
+                <ul>
+                    <li><a>Special Events</a></li>
+                    <li><a>Special Menu</a></li>
+                    <li><a>Discounts</a></li>
+                    <li><a>Upcomming Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a><i class="fa-brands fa-discord"></i>
+                    <a href="https://www.youtube.com/@Ludicin/videos" ><i class="fa-brands fa-youtube"></i>
+                    <a><i class="fa-solid fa-envelope" ></i>
+                    <a href="https://www.youtube.com/watch?v=CWo4Jssi_pg" ><i class="fa-brands fa-twitter"></i></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+</html>
